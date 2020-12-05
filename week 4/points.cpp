@@ -7,7 +7,7 @@
 #include <cmath>
 
 using ll = long long ;
-
+using namespace std;
 std::istream& operator >> (std::istream &is, std::pair<ll, ll> &p){
     is >> p.first >> p.second;
     return is;
@@ -54,6 +54,8 @@ double minimal_distance(std::vector<std::pair<ll, ll>> &v, int l, int r){
 }
 
 int main() {
+	ios_base::sync_with_stdio(0);
+    std::cin.tie(0);
     int n;
     std::cin >> n;
     std::vector<std::pair<ll, ll>> v(n);
